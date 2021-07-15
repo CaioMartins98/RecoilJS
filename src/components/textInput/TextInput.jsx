@@ -10,9 +10,12 @@ function TextInput() {
   };
   return (
     <div>
-      <input type="text" value={text} onChange={onChange} />
+      <label htmlFor="input-text">
+        Entrada:
+        <input type="text" value={text} onChange={onChange} />
+      </label>
       <br />
-      Echo: {text}
+      Saída: {text}
     </div>
   );
 }
